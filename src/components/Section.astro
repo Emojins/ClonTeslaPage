@@ -1,5 +1,5 @@
 ---
-const {color, title, subtitle, subtitle2} = Astro.props
+const {color, title, subtitle, subtitle2, parrafo} = Astro.props
 const textColor = `text-${color}`
 ---
 <section 
@@ -11,16 +11,20 @@ const textColor = `text-${color}`
             <h2 class={`${textColor} pt-40 text-[40px] font-bold`}>
                 {title}
             </h2>
-            <p class={`${textColor} text-sm`}>
+            <p class={`${textColor} text-xl font-medium`}>
                 {subtitle}
             </p>
-            <p class={`${textColor} text-sm`}>
+            <p class={`${textColor} text-md pt-2`}>
                 {subtitle2}
             </p>
         </header>
         
         <footer class="flex flex-col flex-grow justify-end">
             <slot name="footer"/>
+            <div class="pb-20 text-xs pt-4">
+                {parrafo}
+            </div>
+            
         </footer>
     </div>
 

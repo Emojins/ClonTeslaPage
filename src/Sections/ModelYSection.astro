@@ -1,0 +1,29 @@
+---
+import Section from "../components/Section.astro"
+---
+<Section 
+    title="Model Y"
+    subtitle={`Desde $37,490*`}
+    subtitle2="Después de los créditos"
+    color="black"
+>
+    <img class="object-center object-cover h-full w-full" src="/modelY.avif" slot="background">
+    </img>
+
+    <div class="pb-20 gap-x-4 flex mx-auto" slot="footer">
+    <a 
+    class="bg-gray-600 text-white text-sm rounded font-medium px-12 py-2 hover:bg-white
+    hover:text-black transition-colors duration-75 bg-white/5 backdrop-blur-sm" 
+    href="#">
+        Shop Available
+    </a>
+
+    <a 
+    class="text-black border-white text-sm rounded font-medium px-12 py-2
+    bg-white hover:text-white hover:bg-gray-800 items-center justify-center inline-flex" 
+    href="#">
+        Demo Drive
+    </a>
+
+    </div>
+</Section>
